@@ -18,7 +18,12 @@ import R01 from './R01_ClassComponent.js';
 import R02 from './R02_FunctionComponent.js';
 import Props1 from './R03_Prop.js';
 import Props2 from './R04_props2.js';
-import Props3 from './R05_Props.js';
+import Props3 from "./R05_Props.js";
+import 예제1번 from './R06_State1.js'; // '' "" 크게 상관 없음
+import 예제2번 from './R07_State2.js';
+import 예제3번 from './R08_State3.js';
+import 예제4번 from './R09_State4.js';
+import 예제5번 from './R10_State5.js';
 function App() {
   return (
     /*
@@ -44,26 +49,22 @@ function App() {
       <div className="info">
          이름 : 강감찬 / 나이 : 72 / 성별 : 남자
       </div>
-      */}
+      
       
       <h3>Props 3번 실습</h3>
       <Props3 num='5' name="김연정" age="40" gender="여자" phone="010-1111-2222" />
+*/}
+      
+        {/*  <예제1번 /> */}
+        {/*  <예제2번 />  */}
 
-      {/*
-      실습문제
-      Prop3 만들어서
-      num = 5번
-      name = "김연정"
-      age = "40"
-      gender = "여자"
-      phone = "010-1111-2222"
-      가 담기는 R05_Props.js 만들기
+        {/* <예제3번 init="50" step="10" /> */}
+        {/*     init = 처음에 시작할 숫자값   step = 몇 씩 숫자가 커지고 작아질 것인가 */}
+        {/*   <예제4번 init="40" years="1" />  */}
 
-      R05_Props div로 전체 감싸고 className="info-ex"
-      테두리 orange 색 주기
-      */}
-
-
+        <예제5번 />
+        
+    
     </div>
   );
 }

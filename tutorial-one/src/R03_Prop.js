@@ -19,8 +19,6 @@ const 부모1번 = (props) => {
                 <li>점수 : {props.score}점</li>
             </ul>
         </>
-
     )
-
 }
 export default 부모1번;
