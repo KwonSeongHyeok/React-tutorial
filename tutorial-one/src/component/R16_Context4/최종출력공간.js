@@ -13,7 +13,19 @@ const 최종출력공간 = () =>{
 
             {/* 가입한 유저의 정보를 출력하기 */}
             <div>
-                
+                {userList.map((user, index) => {
+                    return(
+                    <ul key={index}>
+                        <li>가입순서 : {index+1} 번 째 유저</li>
+                        <li>이름 : {user.inputName}</li>
+                        <li>번호 : {user.inputphone}</li>
+                    </ul>
+                    )
+                    
+            })
+            }
+            
+
             </div>    
             
         </유저정보전달.Provider>

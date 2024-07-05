@@ -29,6 +29,7 @@ import 컨텍스트1 from './component/R12_Context1.js';
 import 컨텍스트2 from './component/R13_Context2.js'
 import 부트스트랩1 from './component/R14_Bootstrap.js';
 import 컨텍스트3 from './component/R15_Context3/Parent.js'
+import 멤버가입 from './component/R16_Context4/최종출력공간.js'
 
 function App() {
   return (
@@ -73,7 +74,8 @@ function App() {
         {/* <컨텍스트1 /> */}
         {/* <부트스트랩1 /> */}
         {/* <컨텍스트2 /> */}
-        <컨텍스트3 />
+        {/* <컨텍스트3 /> */}
+        <멤버가입 />
     </div>
   );
 }
