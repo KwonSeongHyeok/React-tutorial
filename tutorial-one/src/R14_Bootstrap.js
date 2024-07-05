@@ -44,7 +44,7 @@ const 부트스트랩예제1 = () => {
         <div className="container">
             <div className="row">
                 <div className="col-md-auto">
-                    <h1>React와 Bootstrap 사용 시작</h1>
+                    <h1>React와 Bootstrap 사용 시작!</h1>
                     <button className="btn btn-primary">부트스트랩 버튼</button>
                 </div>
             </div>

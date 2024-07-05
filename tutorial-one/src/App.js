@@ -26,6 +26,7 @@ import 예제4번 from './R09_State4.js';
 import 예제5번 from './R10_State5.js';
 import 댓글창 from './R11_State6.js';
 import 컨텍스트1 from './R12_Context1.js';
+import 부트스트랩1 from './R14_Bootstrap.js';
 function App() {
   return (
     /*
@@ -66,7 +67,8 @@ function App() {
 
         {/* <예제5번 /> */}
         {/* <댓글창 /> */} 
-        <컨텍스트1 />
+        {/* <컨텍스트1 /> */}
+        <부트스트랩1 />
     
     </div>
   );
