@@ -25,6 +25,7 @@ import 예제3번 from './R08_State3.js';
 import 예제4번 from './R09_State4.js';
 import 예제5번 from './R10_State5.js';
 import 댓글창 from './R11_State6.js';
+import 컨텍스트1 from './R12_Context1.js';
 function App() {
   return (
     /*
@@ -64,8 +65,8 @@ function App() {
         {/*   <예제4번 init="40" years="1" />  */}
 
         {/* <예제5번 /> */}
-        <댓글창 />
-        
+        {/* <댓글창 /> */} 
+        <컨텍스트1 />
     
     </div>
   );
