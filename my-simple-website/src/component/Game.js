@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 const Game = () => {
     // 맞출 숫자를 입력하는 guess
@@ -9,9 +10,11 @@ const Game = () => {
     // Math.random() 랜덤으로 0.0 ~ 1.0 사이의 정수, 실수를 출력
     // 0 에서부터 9 까지 출력이기 때문에 + 1을 해서 1부터 10까지로 변경
     // Math.floor 실수를 정수화
-    const[number, setNumber] = useState(Math.floor(Math.random() * 100) +1);
+    const[number, setNumber] = useState(Math.floor(Math.random() * 10) +1);
     // 숫자 맞추려고 시도한 횟수
     const[attempts, setAttempts] = useState(0);
+    // 사용자가 정답을 확인하면 다음단계로 이동하는 버튼이 보이게 생성
+    const [isCorrect, setIsCorrect] = useState(false); // 정답 확인 전이라 false
 
     // 사용자가 숫자를 맞추려고 시도할 때마다 숫자를 새로 세팅해서 저장해놓기
     const handleChange = (e) => {
@@ -32,6 +35,7 @@ const Game = () => {
         // 만약에 숫자를 맞췄다면?
         if(userGuess === number) {
             setMessage('축하합니다. 맞추셨습니다.');
+            setIsCorrect(true);
         } else if(userGuess > number) {
             setMessage('숫자가 너무 큽니다.!');
         } else {
@@ -42,7 +46,14 @@ const Game = () => {
         setGuess('');
     }
     const handleRestart = (e) => {
-
+        // 게임을 다시 시작하기 버튼을 누르면 랜덤숫자를 다시 생성
+        const newNumber = Math.floor(Math.random() * 10)+1;
+        // 모든 값 초기화
+        setNumber(newNumber); // 맞춰야할 숫자 새로 집어넣기
+        setAttempts(0); // 맞추기 위해 시도한 회수 0으로 초기화
+        setMessage(''); // 틀렸습니다. 맞췄습니다. 표시 없애주기
+        setGuess(''); // input 안에 작성한 숫자도 지워주기
+        setIsCorrect(false); // 사용자가 정답 확인 전 상태로 되돌리기
     }
     return(
         <div>
@@ -52,12 +63,20 @@ const Game = () => {
                     type='number'
                     value={guess}
                     onChange={handleChange}
-                    placeholder='1에서 100사이의 숫자 입력하기'
+                    placeholder='1에서 10사이의 숫자 입력하기'
                 />
                 <button type='submit'>추측하기</button>
                 {/* message = 숫자를 맞췄는지 틀렸는지 확인하는 메세지 */}
                 <p>{message}</p>
-                <button onClick={handleRestart}>재시작버튼</button>
+
+                {/* 자바스크립트에서 제일 많이쓰는 if문은 삼항연산자
+                    여기에 표시한 내용 ? true 일 때 실행할 내용 : false 일 때 실행할 내용
+                    true나 false에서 실행할 내용이 많으면 ()괄호로 묶어서 표현
+                */}
+                {isCorrect ? (<Link to="/game-twoStep"><button>다음단계로 이동</button></Link>) : (<button onClick={handleRestart}>재시작버튼</button>)}
+
+
+                
 
             </form>
         </div>
