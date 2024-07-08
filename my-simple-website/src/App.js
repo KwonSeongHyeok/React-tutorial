@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Game from './component/Game';
 import GameTwoStep from './component/GameTwoStep';
@@ -7,6 +6,7 @@ import Home from './component/Home';
 import NavBar from './component/NavBar';
 import Header from './component/Header';
 import TodoList from './component/TodoList';
+import TicTapToe from './component/TicTacToe';
 
 
 function App() {
@@ -19,6 +19,8 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/game-twoStep" element={<GameTwoStep />} />
         <Route path="/todoList" element={<TodoList />} />
+        <Route path="/tictactoe" element={<TicTapToe />} />
+
 
 
       </Routes>
