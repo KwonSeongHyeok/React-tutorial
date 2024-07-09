@@ -7,6 +7,7 @@ import NavBar from './component/NavBar';
 import Header from './component/Header';
 import TodoList from './component/TodoList';
 import TicTapToe from './component/TicTacToe';
+import Dodgegobelin from './component/Dodgegobelin.js';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/game-twoStep" element={<GameTwoStep />} />
         <Route path="/todoList" element={<TodoList />} />
         <Route path="/tictactoe" element={<TicTapToe />} />
+        <Route path="/dodgegobelin" element={<Dodgegobelin />} />
 
 
 
