@@ -11,7 +11,8 @@ const NavBar = () => {
                     왜냐하면 1단계를 통과해야 2단계 링크를 보여줄 것이기 때문
                 */}
                 <li><Link to="/todoList">ToDoList</Link></li>
-                <li><Link to="/tictactoe">TicTacToe</Link></li>
+                <li><Link to="/tictaptoe">TicTacToe</Link></li>
+                <li><Link to="/tictaptoe2">틱탭토 게임</Link></li>
                 <li><Link to="/dodgegobelin">Dodgegobelin</Link></li>
             </ul>
         </nav>
