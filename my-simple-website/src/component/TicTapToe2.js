@@ -1,6 +1,12 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
 import './TicTapToe.css';
+
+/*
+useEffect(() => {
+    // Tictaptoe.js가 실행되면 특정 기능시작!
+}, [])
+*/
 
 const 배열랜덤섞기 = (배열) => {
   //sort = 가지런히 정렬하다 할 때 정렬   랜덤으로 나온 값을 정렬
