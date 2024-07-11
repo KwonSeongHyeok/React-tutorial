@@ -10,7 +10,6 @@ import TicTapToe from './component/TicTacToe';
 import TicTapToe2 from './component/TicTapToe2.js'
 import TicTapToeTwoStep from './component/TicTapToeTwoStep.js';
 import TypingTest from './component/TypingTest.js';
-import TypingTest2 from './component/TypingTest2.js';
 import Dodgegobelin from './component/Dodgegobelin.js';
 
 
@@ -28,7 +27,6 @@ function App() {
         <Route path="/tictaptoe2" element={<TicTapToe2 />} />
         <Route path="/ttt-twoStep" element={<TicTapToeTwoStep/>} />
         <Route path="/typingTest" element={<TypingTest/>} />
-        <Route path="/typingTest2" element={<TypingTest2/>} />
         <Route path="/dodgegobelin" element={<Dodgegobelin />} />
 
 
