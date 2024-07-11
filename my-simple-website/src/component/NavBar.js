@@ -14,6 +14,7 @@ const NavBar = () => {
                 <li><Link to="/tictaptoe">TicTacToe</Link></li>
                 <li><Link to="/tictaptoe2">틱탭토 게임</Link></li>
                 <li><Link to="/dodgegobelin">Dodgegobelin</Link></li>
+                <li><Link to="/typingTest">타자치기대회</Link></li>
             </ul>
         </nav>
     )
