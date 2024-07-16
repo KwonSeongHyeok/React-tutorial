@@ -15,11 +15,21 @@ export default function 컴포넌트명 {
 export const RefEx = () => {
     const pwRef = useRef(null);
 
-    useEffect(() => {
+
+    const 보내기 = () => {
+        //console.log(pwRef.current);
+        if(pwRef.current.value === '') {
+            pwRef.current.focus();
+        }
+    }
+    useEffect(보내기,[]);
+
+    {/*  useEffect(() => {
         if(pwRef.current) {
             pwRef.current.focus();
         }
-    },[]);
+    },[]); */}
+
     return (
         <>
         <form method="post">
@@ -27,6 +37,7 @@ export const RefEx = () => {
             <input type="text" />
             <label>비밀번호 : </label>
             <input type="password" ref={pwRef} />
+            <button type='button' onClick={보내기}>제출하기</button>
         </form>
         </>
     )
