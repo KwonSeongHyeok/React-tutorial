@@ -1,12 +1,13 @@
-/* index.js에 root로 작성된 id style*/
+/* index.js 에 root로 작성된 id style*/
 #root {
   padding: 15px;
 }
-.signup-wrapper{
+
+.signup-wrapper {
   position: relative;
 }
 
-.signup-container{
+.signup-container {
   width: 300px;
   padding: 10px;
   position: absolute;
@@ -23,6 +24,12 @@
 .signup-container > label > input {
   flex-basis: 65%;
 }
-.signup-container button{
+.signup-container button {
   width: 100%;
+}
+
+
+.id-err {
+  color: red;      /* 글자색 설정*/
+  font-weight: bold; /* 글씨  굵기 */
 }
