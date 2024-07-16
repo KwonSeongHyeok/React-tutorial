@@ -41,12 +41,17 @@ const Login = () => {
             setId('');
             setPw('');
             alert('로그인 성공~!');
-        
         })
+    }
+
+    /* 로그아웃 이벤트 핸들러 */
+    const 로그아웃버튼 = () =>{
+        setLoginMember(null);
     }
 
   return (
     <div className="login-container">
+        {loginMember === null && (
       <table>
         <tbody>
           <tr>
@@ -70,6 +75,15 @@ const Login = () => {
           </tr>
         </tbody>
       </table>
+        )}
+      {/* loginMember가 null 아닌 경우 로그아웃 버튼 보이게 하기 */}
+      {loginMember && (
+        <>
+        <p>{loginMember.id}님 환영합니다.</p>
+        <button onClick={로그아웃버튼}>로그아웃</button>
+        </>
+      )}
+
     </div>
   );
 };
