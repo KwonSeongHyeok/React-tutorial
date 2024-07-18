@@ -51,7 +51,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-        {loginMember === null && (
+        {!loginMember && (
       <table>
         <tbody>
           <tr>

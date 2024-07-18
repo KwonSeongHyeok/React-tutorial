@@ -38,8 +38,13 @@ import Ref예제3번 from "./component/R21_useRefSignUp.js";
 //import {RefEx as Ref예제4번} from "./component/R22_useRefEx.js";
 import  {RefEx as Ref예제4번} from "./component/R22_useRefEx.js";
 
-
 import Dodgegobelin from "./component/R23_Dodgegobelin/Dodgegobelin.js";
+
+import Axios예제1번 from './component/R25_Axios_Ex1.js';
+
+
+import Board from "./component/R30_PagiNation/Board.js";
+import Album from "./component/R31_PagiNationEx/Album.js";
 
 
 function App() {
@@ -90,8 +95,14 @@ function App() {
         {/* <Ref예제1번 /> */}
         {/*<Ref예제2번 /> */}
         {/*<Ref예제3번 /> */}
-        <Ref예제4번 />
+        {/*<Ref예제4번 /> */}
         {/* <Dodgegobelin /> */}
+
+        {/* <Axios예제1번 /> */}
+
+        {/* <Board /> */}
+        <Album />
+
     </div>
   );
 }
