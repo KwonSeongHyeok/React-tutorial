@@ -24,7 +24,7 @@ const Home = () => {
             </section>*/}
 
 
-            {/* part 2 : 한 row를 두 colum으로 나눠서 좌측은 사진 우측은 소개 작성하는 about */}
+            {/* part 2 : 한 row를 두 column으로 나눠서 좌측은 사진 우측은 소개 작성하는 about */}
             <section className="home-about-two">
             <h2>소개</h2>
                 <div className="about-row">
