@@ -1,5 +1,5 @@
 import React, {useEffect, useState } from 'react';
-import './TicTapToe.css';
+import '../TicTapToe.css';
 
 const shuffleArray = (array) => {
   return array.sort(() => Math.random() - 0.5);

@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import { Link } from 'react-router-dom';
-import './TicTapToe.css';
+import '../TicTapToe.css';
 
 /*
 useEffect(() => {

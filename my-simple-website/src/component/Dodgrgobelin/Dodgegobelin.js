@@ -1,5 +1,5 @@
 import React, {useState, useRef, useEffect} from 'react';
-import './Dodgegobelin.css';
+import '../Dodgegobelin.css';
 
 const Game = () => {
     const canvasRef = useRef(null);

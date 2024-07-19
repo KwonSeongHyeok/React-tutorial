@@ -3,14 +3,20 @@ import Game from './component/Game';
 import GameTwoStep from './component/GameTwoStep';
 import { Routes, Route } from 'react-router-dom';
 import Home from './component/Home';
-import NavBar from './component/NavBar';
-import Header from './component/Header';
+import NavBar from './component/Layout/NavBar.js';
+/*
+Can't resolve './component/NavBar'  ===> 에러가 발생한 페이지
+        in 'C:\Users\user1\react-workspace\my-simple-website\src'
+*/
+import Header from './component/Layout/Header.js';
+import Footer from './component/Layout/Footer.js';
 import TodoList from './component/TodoList';
-import TicTapToe from './component/TicTacToe';
-import TicTapToe2 from './component/TicTapToe2.js'
-import TicTapToeTwoStep from './component/TicTapToeTwoStep.js';
+import TicTapToe from './component/TicTapToe/TicTacToe.js';
+import TicTapToe2 from './component/TicTapToe/TicTapToe2.js'
+import TicTapToeTwoStep from './component/TicTapToe/TicTapToeTwoStep.js';
 import TypingTest from './component/TypingTest.js';
-import Dodgegobelin from './component/Dodgegobelin.js';
+import Dodgegobelin from './component/Dodgrgobelin/Dodgegobelin.js';
+import MovieRating from './component/Movie/MovieGrade.js';
 
 
 function App() {
@@ -23,15 +29,16 @@ function App() {
         <Route path="/game" element={<Game />} />
         <Route path="/game-twoStep" element={<GameTwoStep />} />
         <Route path="/todoList" element={<TodoList />} />
-        <Route path="/tictaptoe" element={<TicTapToe />} />
         <Route path="/tictaptoe2" element={<TicTapToe2 />} />
         <Route path="/ttt-twoStep" element={<TicTapToeTwoStep/>} />
         <Route path="/typingTest" element={<TypingTest/>} />
         <Route path="/dodgegobelin" element={<Dodgegobelin />} />
+        <Route path="/movieRate" element={<MovieRating />} />
 
 
 
       </Routes>
+      <Footer />
     </div>
   );
 }

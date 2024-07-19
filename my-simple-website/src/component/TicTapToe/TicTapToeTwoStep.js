@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import { Link } from 'react-router-dom';
-import './TicTapToe.css';
+import '../TicTapToe.css';
 
 const 배열랜덤섞기 = (배열) => {
   return 배열.sort(() => Math.random() - 0.5);
