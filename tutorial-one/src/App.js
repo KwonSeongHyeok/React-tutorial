@@ -45,7 +45,8 @@ import Axios예제1번 from './component/R25_Axios_Ex1.js';
 
 import Board from "./component/R30_PagiNation/Board.js";
 import Album from "./component/R31_PagiNationEx/Album.js";
-
+import Profile from './component/R32_Profile.js';
+import Profile2 from './component/R33_MultiProfile.js';
 
 function App() {
   return (
@@ -101,8 +102,9 @@ function App() {
         {/* <Axios예제1번 /> */}
 
         {/* <Board /> */}
-        <Album />
-
+        {/* <Album /> */}
+        {/* <Profile /> */}
+        <Profile2 />
     </div>
   );
 }
