@@ -1,0 +1,17 @@
+package b2o4.mapper;
+
+import java.util.List;
+
+import org.apache.ibatis.annotations.Mapper;
+
+import b204.dto.GalleryBoard;
+
+@Mapper
+public interface GalleryMapper {
+
+	void galleryUpload(GalleryBoard galleryBoard);
+	
+	List<GalleryBoard> allGalleryView();
+	
+	GalleryBoard GalleryDetail(int GBPostNo);
+}

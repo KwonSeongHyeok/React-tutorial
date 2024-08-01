@@ -1,0 +1,14 @@
+package b2o4.service;
+
+import java.util.List;
+
+import b2o4.dto.GalleryBoard;
+
+public interface GalleryService {
+
+	void galleryUpload(GalleryBoard galleryBoard);
+	
+	List<GalleryBoard> allGalleryView();
+	
+	GalleryBoard GalleryDetail(int GBPostNo);
+}

@@ -47,6 +47,7 @@ import Board from "./component/R30_PagiNation/Board.js";
 import Album from "./component/R31_PagiNationEx/Album.js";
 import Profile from './component/R32_Profile.js';
 import Profile2 from './component/R33_MultiProfile.js';
+import keyboard from './component/R99_keyboard.js';
 
 function App() {
   return (
@@ -105,6 +106,7 @@ function App() {
         {/* <Album /> */}
         {/* <Profile /> */}
         <Profile2 />
+        <keyboard />
     </div>
   );
 }

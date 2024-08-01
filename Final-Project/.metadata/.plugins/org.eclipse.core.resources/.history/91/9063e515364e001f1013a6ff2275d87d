@@ -1,0 +1,17 @@
+package b204.dto;
+
+import lombok.*;
+
+@Getter
+@Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
+public class GalleryBoard {
+
+	private int GBPostNo;
+	private String GBPostTitle;
+	private String GBPostContent;
+	private String GBPostImages;
+	private String GBPostCreateDate;
+}

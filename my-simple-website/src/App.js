@@ -34,9 +34,6 @@ function App() {
         <Route path="/typingTest" element={<TypingTest/>} />
         <Route path="/dodgegobelin" element={<Dodgegobelin />} />
         <Route path="/movieRate" element={<MovieRating />} />
-
-
-
       </Routes>
       <Footer />
     </div>
